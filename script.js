@@ -43,14 +43,14 @@ function predict(base64) {
       })
     }
   };
-  xmlhttp.open("POST", `http://127.0.0.1:8000/predict`, true);
+  xmlhttp.open("POST", `https://celebrityapi.herokuapp.com/predict`, true);
   xmlhttp.setRequestHeader("Content-type", "application/json");
   xmlhttp.send(`{"img":"${base64}"}`);
 }
 
 function getCelebrities() {
   var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", `http://127.0.0.1:8000/getCelebrities`, true);
+  xmlhttp.open("GET", `https://celebrityapi.herokuapp.com/getCelebrities`, true);
   xmlhttp.send();
   xmlhttp.onreadystatechange = () => {
     if (xmlhttp.readyState == 4) {
