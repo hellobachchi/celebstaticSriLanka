@@ -62,7 +62,9 @@ function getCelebrities() {
     }
   };
 }
-// predict();
+getCelebrities(); 
+
+
 
 Dropzone.autoDiscover = false;
 
