@@ -2,7 +2,7 @@ var char_tag = document.getElementById("chars");
 var result_element = document.getElementById("result");
 var chars = "";
 
-var api="https://celebapisrilankan.herokuapp.com/";
+var api="https://celebapisrilankan.herokuapp.com";
 // var api="http://localhost:8000";
 
 
