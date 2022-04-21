@@ -1,7 +1,8 @@
 var char_tag = document.getElementById("chars");
 var result_element = document.getElementById("result");
 var chars = "";
-
+// var api="https://celebrityapi.herokuapp.com";
+var api="http://localhost:8000";
 
 
 function predict(base64) {
@@ -43,14 +44,14 @@ function predict(base64) {
       })
     }
   };
-  xmlhttp.open("POST", `https://celebrityapi.herokuapp.com/predict`, true);
+  xmlhttp.open("POST", `${api}/predict`, true);
   xmlhttp.setRequestHeader("Content-type", "application/json");
   xmlhttp.send(`{"img":"${base64}"}`);
 }
 
 function getCelebrities() {
   var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", `https://celebrityapi.herokuapp.com/getCelebrities`, true);
+  xmlhttp.open("GET", `${api}/getCelebrities`, true);
   xmlhttp.send();
   xmlhttp.onreadystatechange = () => {
     if (xmlhttp.readyState == 4) {
