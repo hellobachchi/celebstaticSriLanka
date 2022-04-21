@@ -1,8 +1,8 @@
 var char_tag = document.getElementById("chars");
 var result_element = document.getElementById("result");
 var chars = "";
-var api="https://celebrityapisrilankan.herokuapp.com";
-// var api="http://localhost:8000";
+// var api="https://celebrityapisrilankan.herokuapp.com";
+var api="http://localhost:8000";
 
 
 function predict(base64) {
