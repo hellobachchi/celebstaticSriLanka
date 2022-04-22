@@ -10,3 +10,58 @@
 }
 
 .dz-error-message{display: none !important;}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 5%;
+  width: 100%;
+  /* background-color: red; */
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  color: #888;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+}
+
+footer a {
+  color: #48a14d;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+footer a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+footer img {
+  width: 80px;
+  transition: all 0.2s ease;
+}
+
+footer img:hover {
+  opacity: 0.83;
+}
+
+footer img:focus,
+footer a:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  h1{
+    font-size: 25px !important;
+    color: #14b8a6 !important;
+  }
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}
